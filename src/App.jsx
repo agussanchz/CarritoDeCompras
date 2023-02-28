@@ -1,8 +1,37 @@
+import { products as initialProducts } from './mocks/products.json'
+import { useState } from 'react'
+import { Products } from './components/Products'
+import { Header } from './components/Header'
 
 function App() {
 
+  const [products] = useState(initialProducts)
+
+  const [filters, setFilters] = useState({
+    category: 'all',
+    minPrice: 0
+  })
+
+  const filterProducts = (products) => {
+    return products.filter((product) => {
+      return (
+        product.price >= filters.minPrice && 
+        (
+          filters.category === 'all' ||
+          product.category === filters.category
+        )
+      )
+    })
+  }
+
+  const filteredProducts = filterProducts(products)
+
   return (
-    <h1 className='font-bold underline text-2xl flex justify-center'>Futuro carrito de compras con react y maquetacion en tailwind.css</h1>
+    <>
+      <Header onChangeFilters={setFilters}/>
+      <Products products={filteredProducts} />
+    
+    </>
   )
 }
 
