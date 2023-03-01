@@ -1,20 +1,20 @@
+import { useFilter } from "../hook/useFilter"
 import { useState, useId } from "react"
 
-export function Filters({ onChangeFilters }){
-    const [minPrice, setMinPrice] = useState(0)
+export function Filters() {
+    const { setFilters, filters } = useFilter()
     const minPriceFilterId = useId()
     const categoryFilterId = useId()
 
-    const handleChange = (event) =>{
-        setMinPrice(event.target.value)
-        onChangeFilters(prevState => ({
+    const handleChange = (event) => {
+        setFilters(prevState => ({
             ...prevState,
             minPrice: event.target.value
         }))
     }
 
-    const handleChangeCategory = (event) =>{
-        onChangeFilters(prevState => ({
+    const handleChangeCategory = (event) => {
+        setFilters(prevState => ({
             ...prevState,
             category: event.target.value
         }))
@@ -22,14 +22,14 @@ export function Filters({ onChangeFilters }){
     }
 
 
-    return(
+    return (
         <section className="flex flex-col justify-center items-center gap-4 md:flex-row md:justify-around md:gap-0">
             <div className="flex gap-2">
                 <label htmlFor={minPriceFilterId}>Precio a partir de:</label>
-                <input type="range" id={minPriceFilterId} min='0' max='1000' onChange={handleChange}/>
-                <span>${minPrice}</span>
+                <input type="range" id={minPriceFilterId} min='0' max='1000' onChange={handleChange} value={filters.minPrice} />
+                <span>${filters.minPrice}</span>
             </div>
-   
+
             <div className="flex gap-2">
                 <label htmlFor={categoryFilterId}>Categoria</label>
                 <select id={categoryFilterId} className="bg-gray-400 text-indigo-50" onChange={handleChangeCategory}>
