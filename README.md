@@ -1,2 +1,2 @@
 # CarritoDeCompras
-Futuro proyecto de un carrito de compras
+Proyecto para seguir practicando el uso de useContext y aprender los hook useReducer, useId
