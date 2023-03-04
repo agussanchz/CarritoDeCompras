@@ -1,7 +1,6 @@
 import { useId } from "react"
-import { CartIcon, ClearCartIcon } from "./Icons"
-import './Cart.css'
 import { useCart } from "../hook/useCart"
+import './Cart.css'
 
 function CartItem({ title, thumbnail, quantity, price, addToCart }) {
     return (
@@ -39,7 +38,7 @@ export function Cart() {
                 htmlFor={cartCheckboxId}
                 className='cart-button flex justify-center items-center absolute right-4 top-7 w-10 h-9 bg-card-0 rounded-full p-2 cursor-pointer z-50 text-indigo-50'
             >
-                <CartIcon />
+                🛒
             </label>
             <input type="checkbox" id={cartCheckboxId} hidden />
 
@@ -59,7 +58,7 @@ export function Cart() {
                     className='flex justify-center items-center w-full'
                     onClick={clearCart}
                 >
-                    {cart.length === 0 ? <p className='mt-14 font-poppins text-indigo-50'>¡Carrito vacio!</p> : <ClearCartIcon />}
+                    {cart.length === 0 ? <p className='mt-14 font-poppins text-indigo-50'>¡Carrito vacio!</p> : <h2 className="bg-red-400 text-white h-9 w-full p-2 rounded-md flex justify-center items-center">Borrar todo</h2>}
 
                 </button>
             </aside>

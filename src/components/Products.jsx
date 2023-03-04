@@ -1,5 +1,4 @@
 import { useCart } from "../hook/useCart"
-import { AddToCartIcon, RemoveFromCartIcon } from "./Icons"
 
 export function Products({ products }) {
 
@@ -29,8 +28,8 @@ export function Products({ products }) {
                                 >
                                     {
                                         isProductInCart
-                                            ? <RemoveFromCartIcon />
-                                            : <AddToCartIcon />
+                                            ? <h2 className="text-white h-9 w-full p-2 rounded-md flex justify-center items-center  bg-red-400">Eliminar del carrito</h2>
+                                            : <h2 className="text-white h-9 w-full p-2 rounded-md flex justify-center items-center  bg-blue-400">Agregar al carrito</h2>
                                     }
                                 </button>
                             </div>
