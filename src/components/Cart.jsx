@@ -5,10 +5,10 @@ import { useCart } from "../hook/useCart"
 
 function CartItem({ title, thumbnail, quantity, price, addToCart }) {
     return(
-        <li className='w-40 h-52 rounded flex flex-col justify-center gap-2 bg-gray-400 my-10'>
+        <li className="p-4 rounded-xl flex justify-center flex-col items-center bg-card-0 gap-4 my-10">
             <img src={thumbnail} alt={title} className='w-full aspect-video' />
             <div className='flex justify-center'>
-                <strong>{title}</strong>
+                <strong className="text-indigo-50">{title}</strong>
             </div>
             <div className='flex justify-center'>
                 <strong>${price}</strong>
@@ -18,7 +18,7 @@ function CartItem({ title, thumbnail, quantity, price, addToCart }) {
                     Cantidad: {quantity}
                 </small>
                 <button
-                    className='w-4 bg-gray-500 rounded'
+                    className='w-4 bg-gray-300 rounded text-black'
                     onClick={addToCart}
                 >
                     +
@@ -35,12 +35,15 @@ export function Cart() {
 
     return (
         <>
-            <label htmlFor={cartCheckboxId} className='cart-button flex justify-center items-center absolute right-2 top-8 w-8 bg-gray-400 rounded-full h-8 p-1 cursor-pointer z-50' >
+            <label 
+                htmlFor={cartCheckboxId} 
+                className='cart-button flex justify-center items-center absolute right-4 top-7 w-10 h-9 bg-card-0 rounded-full p-2 cursor-pointer z-50 text-indigo-50' 
+            >
                 <CartIcon />
             </label>
             <input type="checkbox" id={cartCheckboxId} hidden />
 
-            <aside className='cart bg-gray-500 hidden p-8 fixed right-0 top-0 w-52 text-indigo-50'>
+            <aside className='cart bg-secondary-0 hidden p-8 fixed right-0 top-0 w-64 text-indigo-50'>
                 <ul>
                     {cart.map((product) => (
                       <CartItem 
@@ -56,7 +59,7 @@ export function Cart() {
                     className='flex justify-center items-center w-full'
                     onClick={clearCart}
                 >
-                    {cart.length === 0 ? <p className='mt-10'>Carrito vacio :(</p> : <ClearCartIcon />}
+                    {cart.length === 0 ? <p className='mt-14 font-poppins text-indigo-50'>Carrito vacio :(</p> : <ClearCartIcon />}
 
                 </button>
             </aside>

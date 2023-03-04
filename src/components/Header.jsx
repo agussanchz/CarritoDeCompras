@@ -3,7 +3,11 @@ import { Filters } from "./Filters";
 export function Header(){
     return (
         <>
-            <h1 className="text-2xl flex justify-center my-4 font-bold font-mono">React shopping</h1>
+            <h1 
+                className="flex justify-center text-gray-400 text-4xl font-poppins font-bold p-6 underline"
+            >
+                <a href="/">React shopping</a>
+            </h1>
             <Filters/>
         </>
     )

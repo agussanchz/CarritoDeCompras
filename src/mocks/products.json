@@ -144,7 +144,7 @@
        },
        {
           "id":8,
-          "title":"Microsoft Surface Laptop 4",
+          "title":"Microsoft Surface",
           "description":"Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
           "price":1499,
           "discountPercentage":10.23,
@@ -182,7 +182,7 @@
        },
        {
           "id":10,
-          "title":"HP Pavilion 15-DK1056WM",
+          "title":"HP Pavilion",
           "description":"HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
           "price":1099,
           "discountPercentage":6.18,
@@ -237,7 +237,7 @@
        },
        {
           "id":13,
-          "title":"Fog Scent Xpressio Perfume",
+          "title":"Fog Scent Xpressio",
           "description":"Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men",
           "price":13,
           "discountPercentage":8.14,
@@ -256,7 +256,7 @@
        },
        {
           "id":14,
-          "title":"Non-Alcoholic Concentrated Perfume Oil",
+          "title":"Non-Alcohol Perfume",
           "description":"Original Al Munakh® by Mahal Al Musk | Our Impression of Climate | 6ml Non-Alcoholic Concentrated Perfume Oil",
           "price":120,
           "discountPercentage":15.6,
@@ -274,7 +274,7 @@
        },
        {
           "id":15,
-          "title":"Eau De Perfume Spray",
+          "title":"Eau De Perfume",
           "description":"Genuine  Al-Rehab spray perfume from UAE/Saudi Arabia/Yemen High Quality",
           "price":30,
           "discountPercentage":10.99,
@@ -293,7 +293,7 @@
        },
        {
           "id":16,
-          "title":"Hyaluronic Acid Serum",
+          "title":"Hyaluronic Acid",
           "description":"L'OrÃ©al Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid",
           "price":19,
           "discountPercentage":13.31,
@@ -330,7 +330,7 @@
        },
        {
           "id":18,
-          "title":"Oil Free Moisturizer 100ml",
+          "title":"Oil Free Moisturizer",
           "description":"Dermive Oil Free Moisturizer with SPF 20 is specifically formulated with ceramides, hyaluronic acid & sunscreen.",
           "price":40,
           "discountPercentage":13.1,
@@ -367,7 +367,7 @@
        },
        {
           "id":20,
-          "title":"Freckle Treatment Cream- 15gm",
+          "title":"Freckle Treatment",
           "description":"Fair & Clear is Pakistan's only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.",
           "price":70,
           "discountPercentage":16.99,
@@ -386,7 +386,7 @@
        },
        {
           "id":26,
-          "title":"Plant Hanger For Home",
+          "title":"Plant Hanger",
           "description":"Boho Decor Plant Hanger For Home Wall Decoration Macrame Wall Hanging Shelf",
           "price":41,
           "discountPercentage":17.86,
@@ -425,7 +425,7 @@
        },
        {
           "id":28,
-          "title":"3D Embellishment Art Lamp",
+          "title":"3D Art Lamp",
           "description":"3D led lamp sticker Wall sticker 3d wall art light on/off button  cell operated (included)",
           "price":20,
           "discountPercentage":16.49,
