@@ -59,7 +59,7 @@ export function Cart() {
                     className='flex justify-center items-center w-full'
                     onClick={clearCart}
                 >
-                    {cart.length === 0 ? <p className='mt-14 font-poppins text-indigo-50'>Carrito vacio :(</p> : <ClearCartIcon />}
+                    {cart.length === 0 ? <p className='mt-14 font-poppins text-indigo-50'>¡Carrito vacio!</p> : <ClearCartIcon />}
 
                 </button>
             </aside>

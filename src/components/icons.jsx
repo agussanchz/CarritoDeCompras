@@ -6,7 +6,7 @@ export function AddToCartIcon() {
 
 export function RemoveFromCartIcon() {
   return (
-   <h2 className="text-white h-9 w-full p-2 rounded-md flex justify-center items-center  bg-red-400">Eliminar del carrito</h2>
+    <h2 className="text-white h-9 w-full p-2 rounded-md flex justify-center items-center  bg-red-400">Eliminar del carrito</h2>
   )
 }
 
